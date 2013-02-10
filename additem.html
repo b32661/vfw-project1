@@ -7,8 +7,8 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-<meta name="description" content="timestomper-add a stomp"/>
-<meta name="keywords" content="add stomp, vfw project 1, timestomper"/>
+	<meta name="description" content="timestomper-add a stomp"/>
+	<meta name="keywords" content="add stomp, vfw project 1, timestomper"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="viewport" content="user-scalable=no, width=device-width"/>
     <meta name="viewport" content="target-densitydpi=device-dpi"/>
@@ -20,21 +20,35 @@
 	<h1>New Stomp</h1>
     <form action="#" method="post">
     	<fieldset>
-        	<legend>Stomp details</legend>
+        	<legend>What would you like to timestamp?</legend>
             <ul>
-            	<li><label for="sname">name:</label><input type="text" id="sname" /></label></li>
+            	<li><label for="sname">name:</label><input type="text" id="sname" required aria-required="true" /></label></li>
           		<li><label for="sdetails">details:</label><textarea id="sdetails" /></textarea/></li>
+                <li><label for="sdate">current date:</label><input type="date" placeholder="2013-12-16" id="sdate"/></li>
+                <li><label for="stime">current time:</label><input type="time" placeholder="12:01:00" id="stime"/></li>
+                <input type="submit" value="Timestamp" disabled/>
+                
             </ul>    
     		<ul>
                	<li>categories:</li>
                     <ul>
     					<li><input type="checkbox" checked value="Timer" id="timer" /><label for="timer">timer</label></li>
                 		<li><input type="checkbox" value="Location" id="location" /><label for="location">location</label></li>
-                		<li><input type="checkbox" value="Planner" id="planner" /><label for="planner">planner</label></li>
                 		<li><input type="checkbox" value="Memory assist" id="memassist" /><label for="memassist">memory assist</label></li>
                     </ul>
-             <input type="submit" value="STOMP" />       
-            </ul>
+              </ul>
+              <ul>
+              	<label for="sstyle">Preferred Stomp format</label>
+                <select id="sstyle">
+                
+                		<option value="standard time">standard time</option>
+                        <option value="military time">military time</option>
+                </select>          
+              </ul>
+    	</fieldset>
+        <input type="submit" value="STOMP IT OUT" />  
+    </form>
+    
     <footer>
     </footer>
 </body>
