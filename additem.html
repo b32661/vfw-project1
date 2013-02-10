@@ -22,13 +22,19 @@
     	<fieldset>
         	<legend>Stomp details</legend>
             <ul>
-            	<li><label for="sname">stomp name:</label><input type="text" id="sname" /></label></li>
-                <li><label for="sdetails">details:</label><textarea id="sdetails" /></textarea/></li>
-                
+            	<li><label for="sname">name:</label><input type="text" id="sname" /></label></li>
+          		<li><label for="sdetails">details:</label><textarea id="sdetails" /></textarea/></li>
             </ul>    
-    
-    
-    
+    		<ul>
+               	<li>categories:</li>
+                    <ul>
+    					<li><input type="checkbox" checked value="Timer" id="timer" /><label for="timer">timer</label></li>
+                		<li><input type="checkbox" value="Location" id="location" /><label for="location">location</label></li>
+                		<li><input type="checkbox" value="Planner" id="planner" /><label for="planner">planner</label></li>
+                		<li><input type="checkbox" value="Memory assist" id="memassist" /><label for="memassist">memory assist</label></li>
+                    </ul>
+             <input type="submit" value="STOMP" />       
+            </ul>
     <footer>
     </footer>
 </body>
